@@ -4,7 +4,7 @@
 schema:
   schema_id: luna_pinyin_fluency
   name: 朙月拼音·語句流
-  version: "0.25"
+  version: '0.28'
   author:
     - 佛振 <chen.sst@gmail.com>
   description: |
@@ -21,8 +21,6 @@ switches:
     states: [ 半角, 全角 ]
   - name: simplification
     states: [ 漢字, 汉字 ]
-  - name: ascii_punct
-    states: [ 。，, ．， ]
 
 engine:
   processors:
@@ -103,6 +101,6 @@ key_binder:
 recognizer:
   import_preset: default
   patterns:
-    number: "^[-+]?[0-9][.:0-9]*[%]?$"
-    punct: "^/[0-9]*[a-z]*$"
+    number: '^[-+]?[0-9][.:0-9]*[%]?$'
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "`[a-z]*'?$"

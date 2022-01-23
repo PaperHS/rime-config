@@ -1,15 +1,22 @@
 patch:
   app_options:
     com.runningwithcrayons.Alfred-2:
-      ascii_mode: false
+      ascii_mode: true
+    # com.google.android.studio:
+    #   ascii_mode: true
+#    com.googlecode.iterm2:
+#      ascii_mode: true
+    com.runningwithcrayons.Alfred-3:
+      ascii_mode: true
   style:
-    line_spacing: 5
+    line_spacing: 9
     alpha: 0.9
-    color_scheme: Aqua
+    color_scheme: ink
     border_height: 1
     border_width: 1
     font_point: 17
-
+  key_binder／bindings:
+    - { when: always, accept: Shift+space, toggle: ascii_mode }
 # preset_color_schemes:
 #   waterblue:
 #     name: 水蓝/waterblue
@@ -28,8 +35,6 @@ patch:
 #     hilited_candidate_back_color: 15920350
 #      hilited_candidate_label_color: 11184810
 #      comment_text_color: 4009754623
-
-
 
 # 注：预设的配色方案及代码（指定为 style/color_scheme ）
 #   碧水 - aqua

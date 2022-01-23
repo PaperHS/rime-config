@@ -1,17 +1,13 @@
-# default.custom.yaml, 全局生效
-# 添加小鹤双拼到方案选单
+# default.custom.yaml
+# save it to: 
+#   ~/.config/ibus/rime  (linux)
+#   ~/Library/Rime       (macos)
+#   %APPDATA%\Rime       (windows)
+
 patch:
-  menu/page_size: 5
   schema_list:
-    - schema: double_pinyin_flypy   # 新增小鹤双拼
-    - schema: luna_pinyin
-    - schema: cangjie5
-    - schema: luna_pinyin_fluency
-    - schema: luna_pinyin_simp
-    - schema: luna_pinyin_tw
-  recognizer/patterns/rime123: "^rime[0-9]+$"
-  recognizer/patterns/rimeime: "^rimeime[-_.0-9]*$"
-punctuator:
-  half_shape:
-    "[": {pair: ["【", "】"]}
-    "'": {pair: ["`", "`"]}
+#schema    - schema: luna_pinyin          # 朙月拼音
+    - schema: double_pinyin_flypy        # 自然碼雙拼
+  "menu/page_size": 9
+  "ascii_composer/switch_key/Shift_L": noop
+

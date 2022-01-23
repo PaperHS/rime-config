@@ -1,6 +1,8 @@
 distribution_code_name: Squirrel
 distribution_name: "鼠鬚管"
-distribution_version: 0.9.26.1
+distribution_version: 0.15.2
 install_time: "Wed Jan 27 15:58:01 2016"
-installation_id: "aef07baf-fc31-4dbf-911c-c1bc15ed306d"
-rime_version: 1.2.9
+installation_id: paper
+rime_version: 1.7.3
+sync_dir: "/Users/paperhuang/Dropbox/Apps/rime"
+update_time: "Fri Mar 19 14:59:42 2021"

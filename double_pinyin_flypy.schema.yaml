@@ -1,4 +1,7 @@
-customization: 2895882715
+abc_segmentor:
+  extra_tags:
+    - reverse_lookup
+customization: 3636985805
 engine:
   filters:
     - simplifier
@@ -20,8 +23,8 @@ engine:
     - fallback_segmentor
   translators:
     - punct_translator
+    - r10n_translator
     - reverse_lookup_translator
-    - script_translator
 key_binder:
   import_preset: default
 punctuator:
@@ -29,29 +32,24 @@ punctuator:
 recognizer:
   import_preset: default
   patterns:
-    reverse_lookup: "`[a-z]*'?$"
+    reverse_lookup: "`[a-z]*$ "
 reverse_lookup:
-  comment_format:
-    - "xform/([nl])v/$1ü/"
-  dictionary: stroke
-  enable_completion: true
-  preedit_format:
-    - "xlit/hspnz/一丨丿丶乙/"
+  dictionary: emoji
+  enable_completion: false
   prefix: "`"
-  suffix: "'"
-  tips: "〔筆畫〕"
+  tips: "〔表情〕"
 schema:
   author:
     - "double pinyin layout by 鶴"
     - "Rime schema by 佛振 <chen.sst@gmail.com>"
   dependencies:
-    - stroke
+    - emoji
   description: |
     朙月拼音＋小鶴雙拼方案。
     
   name: "小鶴雙拼"
   schema_id: double_pinyin_flypy
-  version: 0.18.custom.2895882715
+  version: 0.18.custom.3636985805
 speller:
   algebra:
     - "erase/^xx$/"
